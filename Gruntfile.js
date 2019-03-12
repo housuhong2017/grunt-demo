@@ -1,23 +1,13 @@
-module.exports=function(grunt){
+module.exports = function (grunt) {
   grunt.initConfig({
+        cssmin: {  
+              'rectangle.min.css': 'rectangle.css'
+            }
+                  
+  });
 
-    cssmin: {
-      options: {
-            mergeIntoShorthands: false,
-      roundingPrecision: -1
-      
-      },
-  target: {
-    files: {
-            'output.css': ['foo.css', 'bar.css']
-        
-    }
-             
-  }
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    }
-  })
+      grunt.registerTask('default', ['cssmin']); 
 
-}
-
-grunt.loadNpmTasks('grunt-contrib-cssmin');
+};

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/housuhong2017/grunt-demo/issues"
   },
-  "homepage": "https://github.com/housuhong2017/grunt-demo#readme"
+  "homepage": "https://github.com/housuhong2017/grunt-demo#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^3.0.0"
+  }
 }
