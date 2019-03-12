@@ -1,7 +1,5 @@
 module.exports = function(grunt){
-
-
-initConfig({
+  grunt.initConfig({
    imagemin: {
     dynamic: {
       files: [{
