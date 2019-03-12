@@ -1,28 +1,23 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     htmlmin: {
-      options: {                                
-        removeComments: true,
-              collapseWhitespace: true
-            },
-        files: {                                   
-              
-                'dist/contact.html': 'src/contact.html'
-              }
-      },
-      dev: {                                       
-        files: {
-                  'dist/index.html': 'src/index.html',
-          'dist/contact.html': 'src/contact.html'
+      options: {
+                collapseWhitespace: true,
+          preserveLineBreaks: false
           
-        }
-          }
-        files: {                                   
-          });
+      },
+  files: {
+            src: './index.html',
+          dest: 'dist/index.html'
+          
+  }
+      
+    }
+               
+  });
 
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-      grunt.registerTask('default', ['htmlmin']);
+      grunt.registerTask('default', ['htmlmin']); 
 
 };
-
